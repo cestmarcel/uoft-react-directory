@@ -2,12 +2,18 @@ import React from "react";
 import Table from 'react-bootstrap/Table';
 import Employees from "../employees.json";
 import EmployeeRow from "./EmployeeRow";
+import "./EmployeeTable.css";
 
-const EmployeeTable = () => {
+const EmployeeTable = ({searchTerm}) => {
+    let filteredEmployees = Employees;
+    if(searchTerm){
+        filteredEmployees = Employees.filter(record => record.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    }
+
     return (
         <Table striped bordered hover>
             <thead>
-            <tr>
+            <tr className="table-header">
                 <th>Image</th>
                 <th>Name</th>
                 <th>Phone</th>
@@ -16,9 +22,9 @@ const EmployeeTable = () => {
             </tr>
             </thead>
             <tbody>
-            {Employees.map(employee => {
+            {filteredEmployees.map(employee => {
                 return (
-                <EmployeeRow employee={employee}/>
+                <EmployeeRow key={employee.name} employee={employee}/>
                 )
             })}
             </tbody>

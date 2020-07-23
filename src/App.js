@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import EmployeeTable from "./components/EmployeeTable";
@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <Container>
       <h1 className="mt-5 mb-5">Employee Overview</h1>
@@ -16,11 +17,11 @@ const App = () => {
             Employee search
           </Form.Label>
           <Col sm={4}>
-            <Form.Control type="text" placeholder="Your search term goes here" />
+            <Form.Control type="text" placeholder="Employee name" onChange={(event) => setSearchTerm(event.target.value)}/>
           </Col>
         </Form.Group>
       </Form>
-      <EmployeeTable />
+      <EmployeeTable searchTerm={searchTerm} />
     </Container>
   );
 }
