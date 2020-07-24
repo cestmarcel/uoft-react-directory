@@ -1,0 +1,25 @@
+.alert-adapted {
+    background-color: #2C4251!important;
+    color: white!important;
+    border-radius: 0%!important;
+    border-color: #2C4251!important;
+    padding-top: 0px!important;
+}
+.alert-adapted .alert-primary {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.FooterSpacer {
+    height: 40px;
+}
