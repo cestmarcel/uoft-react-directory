@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Table from 'react-bootstrap/Table';
-import Employees from "../employees.json";
-import EmployeeRow from "./EmployeeRow";
+import Employees from "../../employees.json";
+import EmployeeRow from "../EmployeeRow";
 import "./EmployeeTable.css";
 
 function compare(sortingParam){
@@ -22,7 +22,9 @@ function compare(sortingParam){
 const EmployeeTable = ({searchTerm}) => {
     let filteredEmployees = Employees;
     if(searchTerm){
-        filteredEmployees = Employees.filter(record => record.name.toLowerCase().includes(searchTerm.toLowerCase()));
+        filteredEmployees = Employees.filter(record => {
+           return record.dob.toLowerCase().includes(searchTerm.toLowerCase()) || record.phone.toLowerCase().includes(searchTerm.toLowerCase()) ||record.email.toLowerCase().includes(searchTerm.toLowerCase()) || record.name.toLowerCase().includes(searchTerm.toLowerCase());
+        })
     }
 
     const [sortingParam, setSortingParam] = useState("name");
@@ -45,7 +47,7 @@ const EmployeeTable = ({searchTerm}) => {
     }
 
     return (
-        <Table striped bordered hover>
+        <Table className="mb-5" striped bordered hover>
             <thead>
             <tr className="table-header">
                 <th onClick={() => setSorting("image")}>Image</th>

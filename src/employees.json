@@ -4,69 +4,69 @@
         "name": "David Rose",
         "phone": "416456372",
         "email": "david@rose-apothecary.ca",
-        "dob": "July 4, 1986"
+        "dob": "1986-07-04"
     },
     {
         "image": "/images/alexis.jpg",
         "name": "Alexis Rose",
         "phone": "4160683356",
         "email": "alexis@alexis-rose-pr.ca",
-        "dob": "June 14, 1988"
+        "dob": "1988-06-14"
     },
     {
         "image": "/images/johnny.jpg",
         "name": "Johnny Rose",
         "phone": "4165547854",
         "email": "johnny@rose.ca",
-        "dob": "July 2, 1956"
+        "dob": "1956-07-02"
     },
     {
         "image": "/images/moira.jpg",
         "name": "Moira Rose",
         "phone": "4169873322",
         "email": "moira@rose.ca",
-        "dob": "April 27, 1957"
+        "dob": "1957-04-27"
     },
     {
         "image": "/images/roland.jpg",
         "name": "Roland Schitt",
         "phone": "416456372",
         "email": "roland@schittscreek.ca",
-        "dob": "January 10, 1965"
+        "dob": "1965-01-10"
     },
     {
         "image": "/images/jocelyn.jpg",
         "name": "Jocelyn Schitt",
         "phone": "4165547854",
         "email": "jocelyn@schittscreek.ca",
-        "dob": "August 17, 1971"
+        "dob": "1971-08-17"
     },
     {
         "image": "/images/stevie.jpg",
         "name": "Stevie Budd",
         "phone": "416456372",
         "email": "stevie@rosebud-motel.ca",
-        "dob": "August 1, 1988"
+        "dob": "1988-08-01"
     },
     {
         "image": "/images/twyla.jpg",
         "name": "Twyla Sands",
         "phone": "4165547854",
         "email": "twyla@cafe-tropical.ca",
-        "dob": "February 21, 1987"
+        "dob": "1987-02-21"
     },
     {
         "image": "/images/patrick.jpg",
         "name": "Patrick Brewer",
         "phone": "4160683356",
         "email": "patrick@rose-apothecary.ca",
-        "dob": "September 30, 1985"
+        "dob": "1985-09-30"
     },
     {
         "image": "/images/ted.jpg",
         "name": "Ted Mullens",
         "phone": "4169873322",
         "email": "ted@mullens-vet.ca",
-        "dob": "May 20, 1986"
+        "dob": "1986-05-20"
     }
 ]
